@@ -5,10 +5,14 @@ __pycache__/
 .vscode/
 
 input/*.pgm
-output/*.pgm
 
-results/*.csv
-results/*.log
+# Keep processed outputs
+# output/*.pgm
 
+# Keep performance results
+# results/*.csv
+# results/*.log
+
+# Temporary archives
 *.zip
 *.tar.gz
