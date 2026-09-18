@@ -16,3 +16,6 @@ input/*.pgm
 # Temporary archives
 *.zip
 *.tar.gz
+# SIPI dataset source files
+misc.zip
+sipi_dataset/
