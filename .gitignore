@@ -1,0 +1,14 @@
+gpu_image_processor.exe
+*.obj
+*.o
+__pycache__/
+.vscode/
+
+input/*.pgm
+output/*.pgm
+
+results/*.csv
+results/*.log
+
+*.zip
+*.tar.gz
