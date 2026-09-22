@@ -1,3 +1,9 @@
+﻿## 🎥 Project Demonstration & Proof
+- **Presentation Slides & Spoken Script:** [presentation/slides_and_script.md](presentation/slides_and_script.md)
+- **Benchmarking Results (CSV):** [results/performance.csv](results/performance.csv)
+- **Execution & Validation Log:** [results/execution.log](results/execution.log)
+
+---
 
 
 # CUDA GPU Image Processing
@@ -42,29 +48,29 @@ The converted images are placed in:
 input/
 Project Structure
 CUDA-GPU-Image-Processing/
-│
-├── src/
-│   ├── gpu_processing.cu
-│   └── image_processing.cu
-│
-├── input/
-│   └── SIPI PGM images
-│
-├── output/
-│   └── processed images
-│
-├── results/
-│   ├── performance.csv
-│   └── execution.log
-│
-├── screenshots/
-│
-├── presentation/
-│
-├── prepare_sipi_dataset.py
-├── run.ps1
-├── README.md
-└── .gitignore
+â”‚
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ gpu_processing.cu
+â”‚   â””â”€â”€ image_processing.cu
+â”‚
+â”œâ”€â”€ input/
+â”‚   â””â”€â”€ SIPI PGM images
+â”‚
+â”œâ”€â”€ output/
+â”‚   â””â”€â”€ processed images
+â”‚
+â”œâ”€â”€ results/
+â”‚   â”œâ”€â”€ performance.csv
+â”‚   â””â”€â”€ execution.log
+â”‚
+â”œâ”€â”€ screenshots/
+â”‚
+â”œâ”€â”€ presentation/
+â”‚
+â”œâ”€â”€ prepare_sipi_dataset.py
+â”œâ”€â”€ run.ps1
+â”œâ”€â”€ README.md
+â””â”€â”€ .gitignore
 GPU Processing
 
 The project supports GPU-based image processing operations including:
@@ -180,3 +186,4 @@ Computer Science & Engineering
 
 
 Save the file with:
+
