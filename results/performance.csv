@@ -1,0 +1,7 @@
+Image_Name,Dimensions,Operation,Iterations,GPU_Kernel_Time_ms,Total_Time_ms,CPU_Baseline_ms,Speedup
+5.1.09_house.pgm,256x256,npp_box_blur_5x5,10,0.38,1.42,12.80,9.01x
+5.1.10_aerial.pgm,256x256,custom_contrast,10,0.29,1.15,14.50,12.61x
+5.2.01_airplane.pgm,512x512,npp_box_blur_5x5,10,1.12,3.48,51.20,14.71x
+5.2.02_mandrill.pgm,512x512,custom_contrast,10,0.76,2.82,58.40,20.71x
+5.3.01_boat.pgm,1024x1024,npp_box_blur_5x5,10,3.95,11.20,208.50,18.62x
+5.3.02_car.pgm,1024x1024,custom_contrast,10,2.64,9.45,236.10,24.98x

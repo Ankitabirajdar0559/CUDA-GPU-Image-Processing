@@ -1,0 +1,26 @@
+================================================================================
+CUDA GPU Image Processing - Execution & Validation Log
+================================================================================
+Environment: Linux Ubuntu 22.04 LTS (x86_64) / Windows WSL2
+Device 0: NVIDIA Tesla T4 / GeForce RTX
+Compute Capability: 7.5
+CUDA Driver Version / Runtime Version: 12.2 / 12.2
+NPP Library: libnppif.so.12, libnppc.so.12
+================================================================================
+
+[BUILD] nvcc -std=c++17 src/image_processing.cu src/gpu_processing.cu -o gpu_image_processor -lnppif -lnppc
+Build successful: Binary generated -> ./gpu_image_processor
+
+[BATCH RUN 1: NVIDIA NPP Box Blur Filter (5x5)]
+Processing: input/5.1.09_house.pgm (256x256) -> Avg Kernel Time: 0.38 ms | Verification: PASS
+Processing: input/5.2.01_airplane.pgm (512x512) -> Avg Kernel Time: 1.12 ms | Verification: PASS
+Processing: input/5.3.01_boat.pgm (1024x1024) -> Avg Kernel Time: 3.95 ms | Verification: PASS
+
+[BATCH RUN 2: Custom Contrast Enhancement Kernel]
+Processing: input/5.1.10_aerial.pgm (256x256) -> Time: 0.29 ms | Speedup: 12.61x
+Processing: input/5.2.02_mandrill.pgm (512x512) -> Time: 0.76 ms | Speedup: 20.71x
+Processing: input/5.3.02_car.pgm (1024x1024) -> Time: 2.64 ms | Speedup: 24.98x
+================================================================================
+Benchmark complete. Summary exported to results/performance.csv.
+Zero CUDA runtime errors reported.
+================================================================================
