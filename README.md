@@ -1,4 +1,4 @@
-Select everything in the file, delete it, and paste this:
+
 
 # CUDA GPU Image Processing
 
